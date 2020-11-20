@@ -28,7 +28,50 @@ Recommendations:
 
 Please add a file called `excercises.md` to your repo with your answers:
 
+#### 1. Write a function that returns product of all numbers of an array/range
 
+```ruby
+>> product([1, 4, 21])
+=> 84
+>> product([-4, 2.3e12, 77.23, 982, 0b101])
+=> -3.48863356e+18
+>> product([-3, 11, 2])
+=> -66
+>> product([8, 300])
+=> 2400
+>> product([234, 121, 23, 945, 0])
+=> 0
+>> product(1..5)
+=> 120
+```
+
+#### 2. Compare if two strings are anagrams (assume input consists of ASCII alphabets only)
+
+```ruby
+>> str_anagram('Tap', 'paT')
+=> true
+>> str_anagram('beat', 'table')
+=> false
+>> str_anagram('beat', 'abet')
+=> true
+>> str_anagram('seat', 'teal')
+=> false
+>> str_anagram('god', 'Dog')
+=> true
+```
+
+#### 3. Compare if two strings are same irrespective of case
+
+```ruby
+>> str_cmp('nice', 'nice')
+=> true
+>> str_cmp('how', 'who')
+=> false
+>> str_cmp('GoOd DaY', 'gOOd dAy')
+=> true
+>> str_cmp('foo', 'food')
+=> false
+```
 
 ## Part II
 ### CHALLENGE
