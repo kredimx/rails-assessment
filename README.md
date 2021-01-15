@@ -57,15 +57,15 @@ Please add a file called `quiz.md` to your repo with your answers:
 #### 2. Compare if two strings are anagrams (assume input consists of ASCII alphabets only)
 
 ```ruby
->> str_anagram('Tap', 'paT')
+>> anagram?('Tap', 'paT')
 => true
->> str_anagram('beat', 'table')
+>> anagram?('beat', 'table')
 => false
->> str_anagram('beat', 'abet')
+>> anagram?('beat', 'abet')
 => true
->> str_anagram('seat', 'teal')
+>> anagram?('seat', 'teal')
 => false
->> str_anagram('god', 'Dog')
+>> anagram?('god', 'Dog')
 => true
 ```
 
