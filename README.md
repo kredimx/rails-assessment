@@ -72,13 +72,13 @@ Please add a file called `quiz.md` to your repo with your answers:
 #### 3. Compare if two strings are same irrespective of case
 
 ```ruby
->> str_cmp('nice', 'nice')
+>> compare('nice', 'nice')
 => true
->> str_cmp('how', 'who')
+>> compare('how', 'who')
 => false
->> str_cmp('GoOd DaY', 'gOOd dAy')
+>> compare('GoOd DaY', 'gOOd dAy')
 => true
->> str_cmp('foo', 'food')
+>> compare('foo', 'food')
 => false
 ```
 
