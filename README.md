@@ -9,27 +9,29 @@
 
 ## General
 
-At [Kredi](https://www.kredi.mx), We are focused on critical financial processes. That is why we want our development team to focus on quality code and best practices.
+We are [Kredi](https://www.kredi.mx), the mortgage marketplace for LatAm (Backed by YC W21), We are focused on critical financial services, our development team is focused on great code, readability, [S.O.L.I.D. principles](https://www.honeybadger.io/blog/ruby-solid-design-principles/#:~:text=The%20SOLID%20design%20principle%20includes,Liskov%20Substitution%20Principle), and best practices.
 
 This is a small technical assessment for our open position as Backend Sofware Developer. We encourage you to follow the rules and recommendations described above:
 
-## Rules:
+## Rules & Recommendations:
 
-- Be honest, do not copy code from Stack overflow, We all know programmers do that, but this time we want to evaluate your thinking process.
-- Do not mention the company name in your repository.
-- Apply best practices, var names, indentation, readability, SOLID, DRY, Design patterns, etc.
+- Be honest, do not copy code from Stack overflow, Sometimes we (as programmers) do that, but this time we want to evaluate your thinking process, the way you solve problems, the quality of your code, etc.
+- **Please, do not mention the company name in your repository**.
+- Apply best practices, readable var names, indentation, code readability, S.O.L.I.D., DRY, Design patterns, etc.
 - Test your code, We strongly recommend RSpec.
-- Publish your code on Github || Gitlab, be careful about how you write your commit messages.
+- Publish your code on `Github || Gitlab`
+- Pay atention on your commit messages.
 - Deploy your code to Heroku, it takes no longer than 20 minutes!
 - If you require any further information or assistance, please feel free to contact us.
-
-## Recommendations:
-
-- Follow best practices.
 - Use code conventions for Ruby
-- Use a CSS framework (Bootstrap, tailwind, or equivalent).
+- Use a CSS framework (Bootstrap, tailwind, or equivalent if needed).
 - Avoid n+1 queries.
--
+
+
+
+# Instructions:
+
+Part I: Quiz, you have to answer 5 questions, the idea of this quiz is to analyze how you can solve ruby code, take in mind
 
 
 ## Part I
