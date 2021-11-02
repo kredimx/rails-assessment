@@ -38,12 +38,12 @@ Cuestionario (Parte I):
 A continuación te presentamos cinco preguntas sobre conocimientos generales de ruby, la idea es que podamos tener una llamada y juntos resolvamos las preguntas, queremos ver como analizas y resuelves problemas, descuida, te aseguramos que pediremos que hagas reverse de árboles binarios y esas cosas.
 
 
-## Part I
+## Parte I
 ### Ruby Quiz
 
-Please add a file called `quiz.md` to your repo with your answers:
+Para esta prueba tenemos planeado hacer una llamada por zoom o meet y hacer más ameno el proceso, queremos interactuar contigo, siéntete libre de hacer preguntas o si eres muy hábil nos gustaría aprender de tu experiencia.
 
-#### 1. Write a function that returns product of all numbers of an array/range
+#### 1. Escribe una función que retorne el producto de todos los elementos (enteros) de un arreglo o rango que recibe en un argumento array/range
 
 ```ruby
 >> product([1, 4, 21])
@@ -60,7 +60,7 @@ Please add a file called `quiz.md` to your repo with your answers:
 => 120
 ```
 
-#### 2. Compare if two strings are anagrams (assume input consists of ASCII alphabets only)
+#### 2. Escribe una función que compare si dos cadenas son anagramas (asume que los parámetros que recibes son solo letras del alfabeto y espacios)
 
 ```ruby
 >> anagram?('Tap', 'paT')
@@ -75,7 +75,7 @@ Please add a file called `quiz.md` to your repo with your answers:
 => true
 ```
 
-#### 3. Compare if two strings are same irrespective of case
+#### 3. Escribe una función que compare si dos cadenas de texto son iguales independientemente si son mayúsculas o minúsculas.
 
 ```ruby
 >> compare('nice', 'nice')
