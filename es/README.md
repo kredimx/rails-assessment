@@ -30,6 +30,15 @@ No hay reglas ;) desarrollar software debe ser algo que lleves en la sangre, que
 - Si requieres de ayuda o tienes dudas, por favor no dudes en comunicarte con el hiring manager.
 - Evita que tu aplicación incurra en consultas n+1.
 
+### Recomendaciones para el cuestionario
+
+1. Respira, relájate, no te sientas presionado, no queremos que respondas todo sin interrupciones.
+2. Compartirás pantalla con el equipo que te entreviste.
+3. Tienes permitido preguntar al equipo dudas generales sobre métodos o módulos del core de Ruby, pero no la respuesta completa.
+4. Al igual que el paso 2, puedes usar google para buscar documentación sobre métodos, módulos, etc. pero no la respuesta completa.
+5. Interpreta esta sesión como una sesión de pair programming.
+6. Prepárate con antelación, si llevas tiempo sin trabajar con Ruby o sientes que necesitas un repaso, ¡Hazlo! te recomendamos revisar módulos como Enumerable, String, métodos, parámetros, etc.
+7. Haz tu mayor esfuerzo!
 
 # Instrucciones
 
@@ -88,7 +97,7 @@ Para esta prueba tenemos planeado hacer una llamada por zoom o meet y hacer más
 => false
 ```
 
-#### 4. Write a function that sorts the keys in a hash by the length of the key as a string. For instance, the hash:
+#### 4. Escribe una función que ordene las llaves (keys) de un hash por la lóngitud de la llave.
 
 ```ruby
 { abc: 'hello', another_key: 123, 4567 => 'third' }
@@ -101,17 +110,27 @@ should result in:
 ````
 
 
-#### 5. Explain the difference between calling `super` and `super()` methods (OOP)
+#### 5. Escribe un método que te devuelva las fichas de un juego de dominó (28 fichas) en el formato [ [0,0], [0,1], [0,2], [0,3] ] donde cada [num1, num2] representa una ficha.
+
+```ruby
+
+def domino_tiles
+  #...
+end
+
+#> [ [0,0], [0,1], [0,2], [0,3], ... ]
+```
+
 
 
 # Challenges
 
-There are different challenges, please solve the challenge your recruiter asked you to solve.
+Nos interesa saber cómo estructuras un proyecto, base de código, pruebas, etc.
 
 
-### [Challenge 1: Url shortener](a1/README.md)
+### [Challenge 1: Acortador de URL's](es/a1/README.md)
 
-### [Challenge 2: Project Management Tool](a2/README.md)
+### [Challenge 2: API para manejo de proyectos](es/a2/README.md)
 
 <br/>
 <br/>
