@@ -1,4 +1,4 @@
-# Part II
+# Parte II
 ### El desafío del acortador de URL's
 
 Tu misión será crear una REST API que sirva para crear links cortos, estos son más fáciles de compartir vía sms o por mensajes, a la par que permiten crear analytics sobre el consumo de dicho servicio.
@@ -9,46 +9,43 @@ Cuando termines por favor compartenos tu repositorio y de ser posible los links 
 
 +puntos extra si usas docker.
 
+Si has visto acortadores de ligas como [bit.ly](https://bit.ly), [cutt.ly/](https://cutt.ly/) seguramente estarás familiarizado con el problema, si tienes una liga con parámetros en la url enorme y la quieres compartir por un chat o sms, los acortadores de url's son tu herramienta indicada, te recomendamos investigar los productos antes mencionados antes de comenzar con tu desarrollo.
+
+Adicionalmente, quieres guardar información de los usuarios con quienes compartiste el link, datos como la dirección IP, navegador, cuántas veces ha abierto el link. etc.
+
+### Requerimientos
+- Como un usuario quiero crear una cuenta en la api del shortener.
+  Criterios de aceptación:
+    - Necesito un correo, contraseña mínimo para poder registrarme
+    - Debe tener validaciones, no se puede repetir el correo.
+    - Debe poder generar un token para poder interactuar con los demás endpoints de la API.
+- Cómo usuario puedo autenticarme y obtener un token que puedo usar para acceder al listado de mis links.
+  CdA:
+    - Este token debe ser enviado como encabezado de autenticación.
+    - El endpoint `/links` me permite ver sólo los links que el usuario loggeado creo.
+- Cómo usuario loggeado puedo crear un nuevo link corto.
+  CdA:
+    - El endpoint `POST /links` Recibe como parámetro la url que deseo acortar.
+    - Automáticamente se debe generar un código con el cual puedo identificar el link.
+    - El código generado debe ser una cadena alfanumérica que me permita evitar colisiones.
+    - El código no debe ser repetido.
+    - El código debe ser generado con algún algoritmo personalizado (ver [hashids](https://hashids.org/) como referencia).
+    - No usar alguna gema que automatice la generación del código.
+    - La lóngitud mínima del código debe ser de 6 caracteres, ejemplo: `3kTMd2`.
+    - El link corto debe estar asociado al usuario loggeado (por el token).
 
 
-### CORE REQUIREMENTS
-- As a visitor, I want to create an account for the app, so that I become an active user.
-    Acceptance Criteria:
-      - Application needs my name, email, and password.
-      - Duplicated emails are not allowed.
-      - Validates email input.
-- As an active user I must be able to put a URL into the home page and get back a URL of the shortest possible length.
+- Cada que comparto el link corto (ejemplo: https://myapp.com/GH53F3) y este link ha sido abierto, el servicio debe redirigir al link original,
+  CdA:
+    - El servicio debe guardar la data de cada visita, información como: `dirección IP`, `navegador`, `Sistema operativo (si s posible`, `fecha`.
+    - Se debe contabilizar las veces que el link ha sido abierto.
+- Cómo usuario puedo eliminar o editar los links que he creado.
+  CdA:
+    - El endpoint `PUT /links/:código` me permite editar la url del link.
+    - El endpoint `DELETE /links/:código` me permite eliminar un link.
 
-      AC:
-        - You shouldn't use any gem or library that provides the short url algorithm
-        - Inputting a valid URL should result in displaying the new shortened URL to the user.
-        - Inputting an invalid URL should result in displaying errors to the user.
+- Cómo desarrollador, mi código debe tener pruebas de modelos y requests como mínimo, usando RSpec o minitest.
 
-- As an active user I must be able to manage my links, edit, create, destroy, etc.
+- Cómo desarrollador debo publicar mi código en un repositorio en github, gitlab o bitbucket.
 
-- Every time one short link is opened, the app must record visitors' data, such as `IP address`, `user agent`, `OS (if possible)`, `date`.
-
-- Our app must differentiate between unique visitors (IP's) and recurrent visitors.
-
-- As an active user, every time I share this link, I must be redirected to the full URL when we enter the short URL (ex: [http://app.com/aSdF](http://app.com/aSdF)​ =>​ [​https://google.com​](​https://google.com​)).
-- As an active user I want to see a list of my links, ordered by creation date.
-- As an active user I want to click on my links to see details and stats.
-
-      AC:
-        - I want to see how many times my link was clicked.
-        - I want to see a list of different devices and user agents and percentages of access.
-
-- There must be a README that explains how to set up the application and the algorithm used for generating the URL shortcode.
-
-- As an active user I want an API key to access and integrate any other platform with this shortener.
-
-      AC:
-        - I want an endpoint to access all my links.
-        - All endpoint results must be paginated.
-        - I want an endpoint to shorten new URLs.
-
-- You need to test all your code with RSpec.
-
-
-> \* Research and understand how [Bit.ly](http://bit.ly) and [TinyURL](https://tinyurl.com/) work before you decide on how to generate URLs of the shortest possible length.
-There must be a view for the Top 100 most frequently accessed URLs.
+- Cómo desarrollador debe publicar mi aplicación en un entorno de pruebas como Heroku.

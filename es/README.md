@@ -52,21 +52,17 @@ A continuación te presentamos cinco preguntas sobre conocimientos generales de 
 
 Para esta prueba tenemos planeado hacer una llamada por zoom o meet y hacer más ameno el proceso, queremos interactuar contigo, siéntete libre de hacer preguntas o si eres muy hábil nos gustaría aprender de tu experiencia.
 
-#### 1. Escribe una función que retorne el producto de todos los elementos (enteros) de un arreglo o rango que recibe en un argumento array/range
+#### 1. Escribe una función que compare si dos cadenas de texto son iguales independientemente si son mayúsculas o minúsculas.
 
 ```ruby
->> product([1, 4, 21])
-=> 84
->> product([-4, 2.3e12, 77.23, 982, 0b101])
-=> -3.48863356e+18
->> product([-3, 11, 2])
-=> -66
->> product([8, 300])
-=> 2400
->> product([234, 121, 23, 945, 0])
-=> 0
->> product(1..5)
-=> 120
+>> compare('nice', 'nice')
+=> true
+>> compare('how', 'who')
+=> false
+>> compare('GoOd DaY', 'gOOd dAy')
+=> true
+>> compare('foo', 'food')
+=> false
 ```
 
 #### 2. Escribe una función que compare si dos cadenas son anagramas (asume que los parámetros que recibes son solo letras del alfabeto y espacios)
@@ -84,20 +80,7 @@ Para esta prueba tenemos planeado hacer una llamada por zoom o meet y hacer más
 => true
 ```
 
-#### 3. Escribe una función que compare si dos cadenas de texto son iguales independientemente si son mayúsculas o minúsculas.
-
-```ruby
->> compare('nice', 'nice')
-=> true
->> compare('how', 'who')
-=> false
->> compare('GoOd DaY', 'gOOd dAy')
-=> true
->> compare('foo', 'food')
-=> false
-```
-
-#### 4. Escribe una función que ordene las llaves (keys) de un hash por la lóngitud de la llave.
+#### 3. Escribe una función que ordene las llaves (keys) de un hash por la lóngitud de la llave.
 
 ```ruby
 { abc: 'hello', another_key: 123, 4567 => 'third' }
@@ -107,10 +90,27 @@ should result in:
 
 ```ruby
 ["abc", "4567", "another_key"]
-````
+```
 
 
-#### 5. Escribe un método que te devuelva las fichas de un juego de dominó (28 fichas) en el formato [ [0,0], [0,1], [0,2], [0,3] ] donde cada [num1, num2] representa una ficha.
+#### 4. Escribe una función que retorne el producto de todos los elementos de un arreglo o rango que recibe en un argumento array/range
+
+```ruby
+>> product([1, 4, 21])
+=> 84
+>> product([-4, 2.3e12, 77.23, 982, 0b101])
+=> -3.48863356e+18
+>> product([-3, 11, 2])
+=> -66
+>> product([8, 300])
+=> 2400
+>> product([234, 121, 23, 945, 0])
+=> 0
+>> product(1..5)
+=> 120
+```
+
+#### 5. Escribe un método que te devuelva las fichas de un juego de dominó (28 fichas) en el formato `[ [0,0], [0,1], [0,2], [0,3], [0,4], [0,5], [0,6], [1,1], [1,2], ... ]` donde cada `[num1, num2]` representa una ficha.
 
 ```ruby
 
@@ -122,17 +122,16 @@ end
 ```
 
 
-
 # Challenges
 
 Nos interesa saber cómo estructuras un proyecto, base de código, pruebas, etc.
 
 
-### [Challenge 1: Acortador de URL's](es/a1/README.md)
+### [Challenge: Acortador de URL's](es/a1/README.md)
 
-### [Challenge 2: API para manejo de proyectos](es/a2/README.md)
+<!-- ### [Challenge 2: API para manejo de proyectos](es/a2/README.md)
 
 <br/>
-<br/>
+<br/> -->
 
 ### Happy coding! :)
