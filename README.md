@@ -34,80 +34,23 @@ This is a small technical assessment for our open position as Backend Sofware De
 Part I: Quiz, you have to answer 5 questions, the idea of this quiz is to analyze how you can solve ruby code, take in mind
 
 
-## Part I
-### Ruby Quiz
+## Part I: Ruby Quiz
 
-Please add a file called `quiz.md` to your repo with your answers:
+There are different quizzes, please solve the quiz your recruiter asked you to solve.
 
-#### 1. Write a function that returns product of all numbers of an array/range
+### [Quiz 1](https://github.com/kredimx/rspec-assessment)
 
-```ruby
->> product([1, 4, 21])
-=> 84
->> product([-4, 2.3e12, 77.23, 982, 0b101])
-=> -3.48863356e+18
->> product([-3, 11, 2])
-=> -66
->> product([8, 300])
-=> 2400
->> product([234, 121, 23, 945, 0])
-=> 0
->> product(1..5)
-=> 120
-```
+### [Quiz 2](https://github.com/kredimx/rspec-assessment/tree/seniors/assessments-1)
 
-#### 2. Compare if two strings are anagrams (assume input consists of ASCII alphabets only)
-
-```ruby
->> anagram?('Tap', 'paT')
-=> true
->> anagram?('beat', 'table')
-=> false
->> anagram?('beat', 'abet')
-=> true
->> anagram?('seat', 'teal')
-=> false
->> anagram?('god', 'Dog')
-=> true
-```
-
-#### 3. Compare if two strings are same irrespective of case
-
-```ruby
->> compare('nice', 'nice')
-=> true
->> compare('how', 'who')
-=> false
->> compare('GoOd DaY', 'gOOd dAy')
-=> true
->> compare('foo', 'food')
-=> false
-```
-
-#### 4. Write a function that sorts the keys in a hash by the length of the key as a string. For instance, the hash:
-
-```ruby
-{ abc: 'hello', another_key: 123, 4567 => 'third' }
-```
-
-should result in:
-
-```ruby
-["abc", "4567", "another_key"]
-````
-
-
-#### 5. Explain the difference between calling `super` and `super()` methods (OOP)
-
-
-# Challenges
+## Part II: Challenges
 
 There are different challenges, please solve the challenge your recruiter asked you to solve.
-
 
 ### [Challenge 1: Url shortener](a1/README.md)
 
 ### [Challenge 2: Project Management Tool](a2/README.md)
+
+### [Challenge 3: Invoices Management](a3/README.md)
 
 <br/>
 <br/>
