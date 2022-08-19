@@ -15,19 +15,9 @@ This is a small technical assessment for our open position as Backend Sofware De
 
 ## Rules & Recommendations:
 
-- Be honest, do not copy code from Stack overflow, Sometimes we (as programmers) do that, but this time we want to evaluate your thinking process, the way you solve problems, the quality of your code, etc.
 - **Please, do not mention the company name in your repository**.
-- Apply best practices, readable var names, indentation, code readability, S.O.L.I.D., DRY, Design patterns, etc.
-- Test your code, We strongly recommend RSpec.
-- Publish your code on `Github || Gitlab`
 - Pay atention on your commit messages.
-- Deploy your code to Heroku, it takes no longer than 20 minutes!
 - If you require any further information or assistance, please feel free to contact us.
-- Use code conventions for Ruby
-- Use a CSS framework (Bootstrap, tailwind, or equivalent if needed).
-- Avoid n+1 queries.
-
-
 
 # Instructions:
 
