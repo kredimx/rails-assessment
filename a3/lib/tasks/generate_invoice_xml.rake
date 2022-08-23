@@ -22,7 +22,7 @@ namespace :xml do
         end
         hash.amount do |amount|
           amount.comment! 'eg. 1234 cents = 12.34'
-          amount.cents FFaker::NameMX.full_name, type: 'integer'
+          amount.cents rand(1_000_000), type: 'integer'
           amount.comment! 'ISO 4217'
           amount.currency FFaker::Currency.code
         end
